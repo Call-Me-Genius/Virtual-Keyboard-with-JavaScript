@@ -1,0 +1,103 @@
+textarea{
+    border-radius: 10px;
+}
+
+
+.logo{
+    position: absolute;
+    top:205px;
+    color:#fff;
+}
+
+img{
+    position: absolute;
+    border-radius: 50%;
+}
+
+.title{
+ position: absolute;
+ top:100px;
+ right:520px;
+ font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    background: rgb(2,0,36);
+    background: #4B5358;
+}
+
+.keyboard {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 10%;
+    padding: 5px 0;
+    background: #dcdcdc;
+    box-shadow:  rgba(0, 0, 0, 0.4);
+
+     user-select: none;
+    transition: bottom 0.4s;
+}
+
+.keyboard--hidden {
+    bottom: -100%;
+}
+
+.keyboard__keys {
+    text-align: center;
+}
+
+.keyboard__key {
+    height: 45px;
+    width: 6%;
+    max-width: 90px;
+    margin: 3px;
+    border-radius: 0;
+    border: none;
+     color: #000;
+    font-size: 1.05rem;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
+
+.keyboard__key:active {
+    background: #D2D6EF;
+}
+
+.keyboard__key--wide {
+    width: 12%;
+}
+
+.keyboard__key--extra-wide {
+    width: 36%;
+    max-width: 500px;
+}
+
+.keyboard__key--activatable::after {
+    content: '';
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #4B5358;
+     background: #D2D6EF;
+     color: rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+}
+
+.keyboard__key--active::after {
+    background: #08ff00;
+}
+
+.keyboard__key--dark {
+    background-color: rgba(0, 0, 0, 0.25);
+}
